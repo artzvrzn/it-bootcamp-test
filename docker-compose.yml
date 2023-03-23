@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  db:
+    build: db
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    networks:
+      - it-bootcamp
+  user-service:
+    build: user-service
+    restart: always
+    environment:
+      DB_URL: jdbc:mysql://db:3306/user_service
+      DB_DRIVER_CLASS: com.mysql.cj.jdbc.Driver
+      DB_USERNAME: spring-user
+      DB_PASSWORD: 111
+    ports:
+      - "8080:8080"
+    networks:
+      - it-bootcamp
+    depends_on:
+      - db
+networks:
+  it-bootcamp:

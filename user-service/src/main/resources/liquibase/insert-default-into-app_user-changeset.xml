@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  <property name="uuid" value="uuid()" dbms="mysql"/>
+  <property name="uuid" value="random_uuid()" dbms="h2"/>
+  <changeSet id="insert-default-into-app_user-1" author="artzvrzn">
+  <insert tableName="app_user">
+    <column name="given_name" value="Anton"/>
+    <column name="family_name" value="Egorov"/>
+    <column name="middle_name" value="Sergeyevich"/>
+    <column name="email" value="egorov.anton@email.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Valentina"/>
+    <column name="family_name" value="Serova"/>
+    <column name="middle_name" value=""/>
+    <column name="email" value="serova@gmail.com"/>
+    <column name="role" value="SALE_USER"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Alexey"/>
+    <column name="family_name" value="German"/>
+    <column name="middle_name" value="Igorevich"/>
+    <column name="email" value="ger.alex@rambler.ru"/>
+    <column name="role" value="CUSTOMER_USER"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Sergey"/>
+    <column name="family_name" value="Zavadskiy"/>
+    <column name="middle_name" value=""/>
+    <column name="email" value="zavadskiy1337@yandex.ru"/>
+    <column name="role" value="SECURE_API_USER"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="John"/>
+    <column name="family_name" value="Doe"/>
+    <column name="middle_name" value=""/>
+    <column name="email" value="john.doe1984@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Alex"/>
+    <column name="family_name" value="Ferguson"/>
+    <column name="middle_name" value=""/>
+    <column name="email" value="ferguson1988@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Leonid"/>
+    <column name="family_name" value="Smirnov"/>
+    <column name="middle_name" value="Natalievich"/>
+    <column name="email" value="ls99@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Zoya"/>
+    <column name="family_name" value="Shirokaya"/>
+    <column name="middle_name" value="Igorevna"/>
+    <column name="email" value="zoya@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Artem"/>
+    <column name="family_name" value="Dmitriev"/>
+    <column name="middle_name" value=""/>
+    <column name="email" value="art.dmtr@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Valentin"/>
+    <column name="family_name" value="Strykalo"/>
+    <column name="middle_name" value=""/>
+    <column name="email" value="valya@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Maksim"/>
+    <column name="family_name" value="Tarasov"/>
+    <column name="middle_name" value="Andreevich"/>
+    <column name="email" value="taras@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  <insert tableName="app_user">
+    <column name="given_name" value="Lev"/>
+    <column name="family_name" value="Tolstoy"/>
+    <column name="middle_name" value=""/>
+    <column name="email" value="lev.tolstoy@gmail.com"/>
+    <column name="role" value="ADMINISTRATOR"/>
+  </insert>
+  </changeSet>
+  </databaseChangeLog>

@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    driver-class-name: ${DB_DRIVER_CLASS:com.mysql.cj.jdbc.Driver}
+    url: ${DB_URL:jdbc:mysql://localhost:3306/user_service}
+    username: ${DB_USERNAME:spring-user}
+    password: ${DB_PASSWORD:111}
