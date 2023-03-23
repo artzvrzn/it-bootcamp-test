@@ -1,21 +1,24 @@
--Java 11
--Log4j2
--Spring Boot 2
--Hibernate 5
--MySQL 8
+<ul>
+<li>Java 11</li>
+<li>Log4j2</li>
+<li>Spring Boot 2</li>
+<li>Hibernate 5</li>
+<li>MySQL 8</li>
+</ul>
 
-docker compose в рут папке
-написаны юнит и интергационные тесты
-использован Liquibase
+<p>docker compose в рут папке</p>
+<p>написаны юнит и интергационные тесты</p>
+<p>использован Liquibase</p>
 
-endpoints:
-POST /user - принимает json:
+
+Endpoints:
+<ul>
+<li>POST /user - принимает json:
   {"family_name": "abc",
    "given_name": "abc",
    "middle_name": "", 
    "email": "email@email.com",
-   "role": "secure api user"}
-GET /users - вернет json список всех пользователей;
-GET /users/{page} - @page - номер страницы (нумерация начинается с 1)
-                    вернет json объект с 10 пользователями и данными для пагинации
-                    
+   "role": "secure api user"};</li>
+<li>GET /users - вернет json список всех пользователей;</li>
+<li><GET /users/{page} - @page - номер страницы (нумерация начинается с 1)вернет json объект с 10 пользователями и данными для пагинации</li>
+</ul>
