@@ -13,6 +13,10 @@ public class UserDtoToUserConverter implements Converter<UserDto, User> {
   private final ModelMapper mapper;
   @Override
   public User convert(UserDto source) {
-    return mapper.map(source, User.class);
+    User user = mapper.map(source, User.class);
+    if (user.getMiddleName() == null) {
+      user.setMiddleName("");
+    }
+    return user;
   }
 }

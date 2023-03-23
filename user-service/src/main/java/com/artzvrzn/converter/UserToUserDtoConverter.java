@@ -31,7 +31,7 @@ public class UserToUserDtoConverter implements Converter<User, UserDto> {
     if (!givenName.isBlank()) {
       sb.append(" ").append(StringUtils.capitalize(givenName));
     }
-    if (!middleName.isBlank()) {
+    if (middleName != null && !middleName.isBlank()) {
       sb.append(" ").append(StringUtils.capitalize(middleName));
     }
     return sb.toString();
